@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    background: #2d4057;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px, 15px, 5px, 15px, ;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+navbar a:hover {
+    color: #f3deca;
+    text-decoration: underline 1px;
+}
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+
+}
+
+footer {
+
+    min-height: 80px;
+    background: #2d4057;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+li {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(#fa9483, #fa9483);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-family: "Dancing Script", cursive;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+section {
+    padding: 90px 15%;
+
+
+}
+
+.logo {
+    height: 50px;
+}
+
+#index {
+    background: linear-gradient(#0000000a, #0000001a), url('../images/index.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.index-info {
+    margin-top: 25vh;
+    text-align: center;
+}
+
+.index-info h1 {
+    font-size: 350%;
+    color: wheat;
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #312d57;
+}
+
+.link-index {
+    color: white;
+    text-decoration: underline #f49483 2px;
+    font-size: 20px;
+
+}
+
+.link-index:hover {
+    color: #f3deca;
+}
+
+.centered {
+    text-align: center;
+}
+
+.vframe {
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #f3deca;
+    border-radius: 5px;
+    box-shadow: rgba(100.100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.loc {
+    overflow: auto;
+    border-bottom: 3px #f3deca dashed;
+    margin-bottom: 15px;
+
+}
+
+.loc img {
+    width: 18vh;
+    height: 18vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.harta {
+    width: 100%;
+    height: 40vh;
+    border: 2px solid #f3deca;
+    border-radius: 5px;
+}
+
+.row {
+    overflow: auto;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0% 10%;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.col-33 {
+    width: 33, 3%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.contacte,
+.cform {
+    border: 2px solid #f3deca;
+    border-radius: 5px;
+    background-color: #f3decaaa;
+    padding: 5px 5%;
+    height: 325px;
+    margin-bottom: 15px;
+}
+
+.cform input,
+.cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    
+}
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+/* media trebuie sa fie la sfarsitl fisierului*/
+@media (max-width:800px) {
+    body{
+        font-size: 16px;
+    }
+    section{
+        padding: 90px 10px;
+    }
+    .index-info h1{
+        font-size: 250%;
+    }
+
+    .vframe{
+        height: 55vw;
+    }
+    [class^="col-"] {
+       width: 100% !important;
+    }
+
+    navbar a {
+        display: none;
+    }
+
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
